@@ -26,6 +26,7 @@ public:
   virtual antlrcpp::Any visitVarExpression(ccParser::VarExpressionContext *ctx);
 
   virtual antlrcpp::Any visitComparison(ccParser::ComparisonContext *ctx);
+  virtual antlrcpp::Any visitUnary(ccParser::UnaryContext *ctx);
 
 private:
   map<string, size_t> symbols;
